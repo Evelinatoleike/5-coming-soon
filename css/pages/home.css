@@ -92,11 +92,18 @@ text-decoration: none;
     color: var(--secondary-color);
     text-decoration: underline;
 }
-@media () {
-    main .form > input {
-    width: calc(50% - 10px);}
+
+main .form > button {
+    float: right;
+}
+
+@media (min-width: 900px) {
+    main .form > input.input {
+        width: calc(50% - 10px);
+    }
     main .form > input:last-of-type {
-    float: right;}
+        float: right;
+    }
 }
 
 
