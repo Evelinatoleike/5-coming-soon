@@ -1,4 +1,6 @@
 .form {  
+    display: inline-block;
+    width: 100%;
 }
 
 .form > * {
@@ -10,9 +12,6 @@
 }
 .form > label {
     display: none;
-}
-.form > textarea {
-    width: 100%;
 }
 
 .form > .input {
