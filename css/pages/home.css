@@ -79,6 +79,9 @@ hero .form > .input {
     text-transform: uppercase;
     font-size: 20px;
     line-height: 1.2em;
+    position: sticky;
+    top: 0;
+    background-color: white;
 }
 
 .content-description {
@@ -111,13 +114,17 @@ main .form > button {
 /* FOOTER: start */
 footer.container {
     padding-top: 0;
+    font-size: 17px;
     text-align: center;
+    color: #fff8;
 }
 
 .socials {
     padding: 15px 0;
     border-bottom: 2px solid white;
+    position: relative;
 }
+
 
 .socials > .fa {
     width: 50px;
@@ -134,13 +141,51 @@ footer.container {
     background-color: white;
     color: var(--primary-color);
 }
+footer .finish-trio {
+    display: inline-block;
+}
+
+footer .finish-trio > p {
+    float: left;
+    padding: 0 10px;
+    position: relative;
+}
+
 footer .logo {
     max-height: 50px;
     width: 100%;
     margin: 50px 0;
     object-fit: contain;
     object-position: top;
-
 }
+
+footer .finish-trio > p::before {
+    content: '';
+    display: inline-block;
+    width: 1px;
+    height: 70%;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(-50%, -50%);
+}
+
+footer .finish-trio > p:first-child::before {
+    display: none;
+}
+
+footer .link {
+    color:white;
+    text-decoration: none;
+}
+
+@media (max-width: 700px) {
+    footer .trio > p {
+        width: 100%;
+    }
+    footer .trio > p::before {
+        display: none;
+    }
 
 /* FOOTER: end */
