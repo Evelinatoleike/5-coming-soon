@@ -6,7 +6,7 @@
 /* 3rd-party */
 
 /* components */
-@import '../components/buttom.css';
+@import '../components/button.css';
 @import '../components/clock.css';
 @import '../components/form.css';
 @import '../components/mouse.css';
@@ -50,9 +50,63 @@
 .hero .clock {
     margin-bottom: 45px;
 }
+.hero .form {
+    width: 90%;
+    margin: 0 5% 15px;
+}
+
+hero .form > .input {
+    color: white;
+    border-color: white;
+}
+
+.hero .form > .input::placeholder {
+    color: white;
+}
+
 /* HERO: end */
 
 /* MAIN CONTENT: start */
+.column > * {
+    margin-bottom: 20px;
+}
+
+.column > *:last-child {
+    margin-bottom: 0;
+}
+.content-title {
+    text-transform: uppercase;
+    font-size: 20px;
+    line-height: 1.2em;
+}
+
+.content-description {
+    font-size:17px;
+    color: grey;
+}
+.content-description > .link {
+color: var(--secondary-color);
+text-decoration: none;
+}
+.content-description > .link:hover {
+    color: var(--secondary-color);
+    text-decoration: underline;
+}
+
+main .form > button {
+    float: right;
+}
+
+@media (min-width: 900px) {
+    main .form > input.input {
+        width: calc(50% - 10px);
+    }
+    main .form > input:last-of-type {
+        float: right;
+    }
+}
+
+
 /* MAIN CONTENT: end */
 
 /* FOOTER: start */
