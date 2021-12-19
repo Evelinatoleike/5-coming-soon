@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,6 +16,7 @@
     <meta name="theme-color" content="#ffffff">
     <link rel="stylesheet" href="./css/pages/home.css">
 </head>
+
 <body>
     <Section class=" container bg-primary hero">
         <div class="row-short">
@@ -41,7 +43,6 @@
             </div>
             <form class="form">
                 SUBSCRIBE FORM
-                <button class="btn">CLICK ME</button>
             </form>
             <div calss="mouse">
                 MOUSE
@@ -83,23 +84,29 @@
                     </div>
                 </div>
             </div>
-         <div class="column right">
-             <h2 class="content-title">Have any question?</h2>
-             <p class="content-description">Lorem ipsum dolor, sit amet consectetur <a class="link" href="mailto:vardenis@pastas.xyz">vardenis@pastas.xyz</a> adipisicing elit. Ut porro exercitationem sint eius harum explicabo vitae eveniet nostrum odit minus.</p>
-             <form class="form">
-                 MESSAGE FORM
-             </form>
-         </div>
+            <div class="column right">
+                <h2 class="content-title">Have any question?</h2>
+                <p class="content-description">Lorem ipsum dolor, sit amet consectetur <a class="link" href="mailto:vardenis@pastas.xyz">vardenis@pastas.xyz</a> adipisicing elit. Ut porro exercitationem sint eius harum explicabo vitae eveniet nostrum odit minus.</p>
+                <form class="form">
+                    <label for="name">Name</label>
+                    <input id="text" class="input" type="text" placeholder="Name" required autocomplete="name">
+                    <label for="email">Email</label>
+                    <input id="email" class="input" type="email" placeholder="Email" required autocomplete="email">
+                    <label for="message">Message</label>
+                    <textarea name="" id="message" class="input" placeholder="Message" required autocomplete="off"></textarea>
+                    <button class="btn" type="submit">Send message</button>
+            </div>
         </div>
     </main>
 
     <footer class="container bg-primary">
         <div class="row-long">
-            FOOTER CONTENT 
+            FOOTER CONTENT
         </div>
         <div class="row-short">
             FOOTER CONTENT
         </div>
     </footer>
 </body>
-</html> 
+
+</html>

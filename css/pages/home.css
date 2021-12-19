@@ -6,7 +6,7 @@
 /* 3rd-party */
 
 /* components */
-@import '../components/buttom.css';
+@import '../components/button.css';
 @import '../components/clock.css';
 @import '../components/form.css';
 @import '../components/mouse.css';
@@ -80,6 +80,8 @@ text-decoration: none;
 }
  .progress-bar {
  }
+
+ main .form
 /* MAIN CONTENT: end */
 
 /* FOOTER: start */
