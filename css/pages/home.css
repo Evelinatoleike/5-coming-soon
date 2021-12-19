@@ -4,6 +4,7 @@
 @import '../base/layout.css';
 
 /* 3rd-party */
+@import '../components/font-awesome.min.css';
 
 /* components */
 @import '../components/button.css';
@@ -105,9 +106,34 @@ main .form > button {
         float: right;
     }
 }
-
-
 /* MAIN CONTENT: end */
 
 /* FOOTER: start */
+footer.container {
+    padding-top: 0;
+}
+
+.socials {
+    padding: 15px 0;
+    text-align: center;
+    border-bottom: 2px solid white;
+}
+
+.socials > .fa {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+    border-radius: 50%;
+    transition: all 1s;
+}
+
+.socials > .fa:hover {
+    background-color: white;
+    color: var(--primary-color);
+
+}
+
 /* FOOTER: end */
