@@ -15,21 +15,16 @@
     width: 100%;
 }
 
-.form > input {
-    width: calc(50% - 10px);
-}
-
-.form > input:last-of-type {
-    float: right;
-}
-
 .form > .input {
-    padding: 0.5em;
+    width: 100%;
+    padding: 0.5em 0;
+    float: left;
     font-size: 17px;
     line-height: 1.5em;
     border: none;
-    border-bottom: 1px solid lightgray;
-    border-radius: 0.25em;
+    border-bottom: 2px solid lightgray;
+    border-radius: 0.2em;
+    background-color: transparent;
 }
 
 .form > textarea {
