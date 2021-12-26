@@ -1,0 +1,19 @@
+.mouse {
+    display: inline-block;
+    font-size: 1.5px;
+    width: 26em;
+    height: 40em;
+    text-align: center;
+    border: 2.5em solid white;
+    border-radius: 13em;
+}
+
+.mouse > .wheel {
+    display: inline-block;
+    width: 3em;
+    height: 5em;
+    background-color: white;
+    margin-top: 7em;
+    border-radius: 1.5em;
+
+}
