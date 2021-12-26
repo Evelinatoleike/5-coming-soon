@@ -13,7 +13,24 @@
     width: 3em;
     height: 5em;
     background-color: white;
-    margin-top: 7em;
+    margin-top: 8em;
     border-radius: 1.5em;
+    animation-name: scrolling;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+}
 
+@keyframes scrolling {
+    0% {
+        margin-top: 8em;
+        opacity: 1;
+    }
+    35% {
+        margin-top: 16em;
+        opacity: 1;
+    }
+    100% {
+        margin-top: 24em;
+        opacity: 0;
+    }
 }
